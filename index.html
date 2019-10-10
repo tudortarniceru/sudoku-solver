@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Sudoku Solver</title>
+        <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" id="css" href="style.css">
+        <script src="loadTable.js"></script> 
+        <script src="input.js"></script> 
+        <script src="render.js"></script> 
+        <script src="solve.js"></script>
+        <script src="keyboardMovement.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Lobster&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+    <body onload="createTable(); changeSolveButton();">
+        <div id="main">
+            
+            <div id="board">
+                
+            </div>      
+            <div id="controls">
+                <div id="websiteTitle">Sudoku Solver</div>
+                <div id="controlButtonsWrapper">
+                    <div title="The board configuration is valid" id="validButton" class="controlButton">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div title="" id="solveButton" class="controlButton" onclick="">Solve Table &nbsp;<i class="fas fa-cogs"></i></div>
+                </div>
+            </div>
+            <div id="footer">
+                <div title="Go to the github repository" onclick="window.open('https://github.com/tudortarniceru/sudoku-solver')" id="footer-git-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
